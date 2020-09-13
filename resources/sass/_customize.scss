@@ -1,0 +1,46 @@
+body{
+  width:100vw;
+  overflow-x:hidden;
+}
+svg{
+  max-width:100%;
+}
+.navbar-brand{
+  max-width:200px;
+}
+.logo{
+  fill:$white;
+}
+.bg{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  
+}
+.mv{
+  position:relative;
+  .-tit{
+  .inner{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+}
+.-img{
+
+}
+}
+.mv-wrapper{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  .container{
+    display:flex;
+    .mv{
+      width:50%;
+    }
+  }
+}
