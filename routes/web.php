@@ -13,9 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes(['verify' => true]);
+
+// routes/web.php
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('home');
 });
+
+Route::resource('tasks', 'TaskController');
 
 Auth::routes();
 
